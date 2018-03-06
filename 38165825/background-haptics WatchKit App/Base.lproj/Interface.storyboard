@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="background_haptics_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Start Workout" id="VTy-dp-bye">
+                            <connections>
+                                <action selector="handleWorkoutButton" destination="AgC-eL-Hgc" id="pyM-pU-sJ3"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Play Haptic (now)" id="hiw-9L-AvN">
+                            <connections>
+                                <action selector="playHaptic" destination="AgC-eL-Hgc" id="quS-oH-wr8"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Play Haptic (5s delay)" id="yqM-Ur-qoc">
+                            <connections>
+                                <action selector="playHapticDelay" destination="AgC-eL-Hgc" id="uxx-xJ-YSS"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="workoutButton" destination="VTy-dp-bye" id="bbg-KH-a0o"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA206B29204E38AB007CE838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206B28204E38AB007CE838 /* AppDelegate.swift */; };
+		EA206B2B204E38AB007CE838 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206B2A204E38AB007CE838 /* ViewController.swift */; };
+		EA206B2E204E38AB007CE838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA206B2C204E38AB007CE838 /* Main.storyboard */; };
+		EA206B30204E38AB007CE838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA206B2F204E38AB007CE838 /* Assets.xcassets */; };
+		EA206B33204E38AB007CE838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA206B31204E38AB007CE838 /* LaunchScreen.storyboard */; };
+		EA206B38204E38AB007CE838 /* background-haptics WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA206B37204E38AB007CE838 /* background-haptics WatchKit App.app */; };
+		EA206B3E204E38AB007CE838 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA206B3C204E38AB007CE838 /* Interface.storyboard */; };
+		EA206B40204E38AB007CE838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA206B3F204E38AB007CE838 /* Assets.xcassets */; };
+		EA206B47204E38AC007CE838 /* background-haptics WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EA206B46204E38AC007CE838 /* background-haptics WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA206B4C204E38AC007CE838 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206B4B204E38AC007CE838 /* InterfaceController.swift */; };
+		EA206B4E204E38AC007CE838 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA206B4D204E38AC007CE838 /* ExtensionDelegate.swift */; };
+		EA206B50204E38AC007CE838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA206B4F204E38AC007CE838 /* Assets.xcassets */; };
+		EA206B62204E4233007CE838 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA206B61204E4233007CE838 /* HealthKit.framework */; };
+		EA206B65204E424E007CE838 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA206B64204E424E007CE838 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA206B39204E38AB007CE838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA206B1D204E38AB007CE838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA206B36204E38AB007CE838;
+			remoteInfo = "background-haptics WatchKit App";
+		};
+		EA206B48204E38AC007CE838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA206B1D204E38AB007CE838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA206B45204E38AC007CE838;
+			remoteInfo = "background-haptics WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA206B57204E38AC007CE838 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA206B47204E38AC007CE838 /* background-haptics WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA206B5B204E38AC007CE838 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EA206B38204E38AB007CE838 /* background-haptics WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA206B25204E38AB007CE838 /* background-haptics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "background-haptics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA206B28204E38AB007CE838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA206B2A204E38AB007CE838 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA206B2D204E38AB007CE838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA206B2F204E38AB007CE838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA206B32204E38AB007CE838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA206B34204E38AB007CE838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA206B37204E38AB007CE838 /* background-haptics WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "background-haptics WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA206B3D204E38AB007CE838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EA206B3F204E38AB007CE838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA206B41204E38AB007CE838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA206B46204E38AC007CE838 /* background-haptics WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "background-haptics WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA206B4B204E38AC007CE838 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EA206B4D204E38AC007CE838 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EA206B4F204E38AC007CE838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA206B51204E38AC007CE838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA206B5F204E4233007CE838 /* background-haptics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "background-haptics.entitlements"; sourceTree = "<group>"; };
+		EA206B61204E4233007CE838 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EA206B63204E424E007CE838 /* background-haptics WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "background-haptics WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		EA206B64204E424E007CE838 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA206B22204E38AB007CE838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B62204E4233007CE838 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA206B43204E38AC007CE838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B65204E424E007CE838 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA206B1C204E38AB007CE838 = {
+			isa = PBXGroup;
+			children = (
+				EA206B27204E38AB007CE838 /* background-haptics */,
+				EA206B3B204E38AB007CE838 /* background-haptics WatchKit App */,
+				EA206B4A204E38AC007CE838 /* background-haptics WatchKit Extension */,
+				EA206B26204E38AB007CE838 /* Products */,
+				EA206B60204E4233007CE838 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA206B26204E38AB007CE838 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA206B25204E38AB007CE838 /* background-haptics.app */,
+				EA206B37204E38AB007CE838 /* background-haptics WatchKit App.app */,
+				EA206B46204E38AC007CE838 /* background-haptics WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA206B27204E38AB007CE838 /* background-haptics */ = {
+			isa = PBXGroup;
+			children = (
+				EA206B5F204E4233007CE838 /* background-haptics.entitlements */,
+				EA206B28204E38AB007CE838 /* AppDelegate.swift */,
+				EA206B2A204E38AB007CE838 /* ViewController.swift */,
+				EA206B2C204E38AB007CE838 /* Main.storyboard */,
+				EA206B2F204E38AB007CE838 /* Assets.xcassets */,
+				EA206B31204E38AB007CE838 /* LaunchScreen.storyboard */,
+				EA206B34204E38AB007CE838 /* Info.plist */,
+			);
+			path = "background-haptics";
+			sourceTree = "<group>";
+		};
+		EA206B3B204E38AB007CE838 /* background-haptics WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EA206B3C204E38AB007CE838 /* Interface.storyboard */,
+				EA206B3F204E38AB007CE838 /* Assets.xcassets */,
+				EA206B41204E38AB007CE838 /* Info.plist */,
+			);
+			path = "background-haptics WatchKit App";
+			sourceTree = "<group>";
+		};
+		EA206B4A204E38AC007CE838 /* background-haptics WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EA206B63204E424E007CE838 /* background-haptics WatchKit Extension.entitlements */,
+				EA206B4B204E38AC007CE838 /* InterfaceController.swift */,
+				EA206B4D204E38AC007CE838 /* ExtensionDelegate.swift */,
+				EA206B4F204E38AC007CE838 /* Assets.xcassets */,
+				EA206B51204E38AC007CE838 /* Info.plist */,
+			);
+			path = "background-haptics WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EA206B60204E4233007CE838 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA206B64204E424E007CE838 /* HealthKit.framework */,
+				EA206B61204E4233007CE838 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA206B24204E38AB007CE838 /* background-haptics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA206B5C204E38AC007CE838 /* Build configuration list for PBXNativeTarget "background-haptics" */;
+			buildPhases = (
+				EA206B21204E38AB007CE838 /* Sources */,
+				EA206B22204E38AB007CE838 /* Frameworks */,
+				EA206B23204E38AB007CE838 /* Resources */,
+				EA206B5B204E38AC007CE838 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA206B3A204E38AB007CE838 /* PBXTargetDependency */,
+			);
+			name = "background-haptics";
+			productName = "background-haptics";
+			productReference = EA206B25204E38AB007CE838 /* background-haptics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA206B36204E38AB007CE838 /* background-haptics WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA206B58204E38AC007CE838 /* Build configuration list for PBXNativeTarget "background-haptics WatchKit App" */;
+			buildPhases = (
+				EA206B35204E38AB007CE838 /* Resources */,
+				EA206B57204E38AC007CE838 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA206B49204E38AC007CE838 /* PBXTargetDependency */,
+			);
+			name = "background-haptics WatchKit App";
+			productName = "background-haptics WatchKit App";
+			productReference = EA206B37204E38AB007CE838 /* background-haptics WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EA206B45204E38AC007CE838 /* background-haptics WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA206B54204E38AC007CE838 /* Build configuration list for PBXNativeTarget "background-haptics WatchKit Extension" */;
+			buildPhases = (
+				EA206B42204E38AC007CE838 /* Sources */,
+				EA206B43204E38AC007CE838 /* Frameworks */,
+				EA206B44204E38AC007CE838 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "background-haptics WatchKit Extension";
+			productName = "background-haptics WatchKit Extension";
+			productReference = EA206B46204E38AC007CE838 /* background-haptics WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA206B1D204E38AB007CE838 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alex Chow";
+				TargetAttributes = {
+					EA206B24204E38AB007CE838 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					EA206B36204E38AB007CE838 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA206B45204E38AC007CE838 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EA206B20204E38AB007CE838 /* Build configuration list for PBXProject "background-haptics" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA206B1C204E38AB007CE838;
+			productRefGroup = EA206B26204E38AB007CE838 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA206B24204E38AB007CE838 /* background-haptics */,
+				EA206B36204E38AB007CE838 /* background-haptics WatchKit App */,
+				EA206B45204E38AC007CE838 /* background-haptics WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA206B23204E38AB007CE838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B33204E38AB007CE838 /* LaunchScreen.storyboard in Resources */,
+				EA206B30204E38AB007CE838 /* Assets.xcassets in Resources */,
+				EA206B2E204E38AB007CE838 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA206B35204E38AB007CE838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B40204E38AB007CE838 /* Assets.xcassets in Resources */,
+				EA206B3E204E38AB007CE838 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA206B44204E38AC007CE838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B50204E38AC007CE838 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA206B21204E38AB007CE838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B2B204E38AB007CE838 /* ViewController.swift in Sources */,
+				EA206B29204E38AB007CE838 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA206B42204E38AC007CE838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA206B4E204E38AC007CE838 /* ExtensionDelegate.swift in Sources */,
+				EA206B4C204E38AC007CE838 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA206B3A204E38AB007CE838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA206B36204E38AB007CE838 /* background-haptics WatchKit App */;
+			targetProxy = EA206B39204E38AB007CE838 /* PBXContainerItemProxy */;
+		};
+		EA206B49204E38AC007CE838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA206B45204E38AC007CE838 /* background-haptics WatchKit Extension */;
+			targetProxy = EA206B48204E38AC007CE838 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA206B2C204E38AB007CE838 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA206B2D204E38AB007CE838 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA206B31204E38AB007CE838 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA206B32204E38AB007CE838 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA206B3C204E38AB007CE838 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA206B3D204E38AB007CE838 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA206B52204E38AC007CE838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA206B53204E38AC007CE838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA206B55204E38AC007CE838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "background-haptics WatchKit Extension/background-haptics WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3N9J49FU2;
+				INFOPLIST_FILE = "background-haptics WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.inoxygen.background-haptics.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		EA206B56204E38AC007CE838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "background-haptics WatchKit Extension/background-haptics WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3N9J49FU2;
+				INFOPLIST_FILE = "background-haptics WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.inoxygen.background-haptics.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		EA206B59204E38AC007CE838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3N9J49FU2;
+				IBSC_MODULE = background_haptics_WatchKit_Extension;
+				INFOPLIST_FILE = "background-haptics WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.inoxygen.background-haptics.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		EA206B5A204E38AC007CE838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3N9J49FU2;
+				IBSC_MODULE = background_haptics_WatchKit_Extension;
+				INFOPLIST_FILE = "background-haptics WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.inoxygen.background-haptics.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		EA206B5D204E38AC007CE838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "background-haptics/background-haptics.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3N9J49FU2;
+				INFOPLIST_FILE = "background-haptics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.inoxygen.background-haptics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA206B5E204E38AC007CE838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "background-haptics/background-haptics.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3N9J49FU2;
+				INFOPLIST_FILE = "background-haptics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.inoxygen.background-haptics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA206B20204E38AB007CE838 /* Build configuration list for PBXProject "background-haptics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA206B52204E38AC007CE838 /* Debug */,
+				EA206B53204E38AC007CE838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA206B54204E38AC007CE838 /* Build configuration list for PBXNativeTarget "background-haptics WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA206B55204E38AC007CE838 /* Debug */,
+				EA206B56204E38AC007CE838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA206B58204E38AC007CE838 /* Build configuration list for PBXNativeTarget "background-haptics WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA206B59204E38AC007CE838 /* Debug */,
+				EA206B5A204E38AC007CE838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA206B5C204E38AC007CE838 /* Build configuration list for PBXNativeTarget "background-haptics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA206B5D204E38AC007CE838 /* Debug */,
+				EA206B5E204E38AC007CE838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA206B1D204E38AB007CE838 /* Project object */;
+}
