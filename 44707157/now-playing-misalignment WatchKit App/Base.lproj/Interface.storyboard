@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="now_playing_misalignment_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Modal Segue" id="W3r-0a-XyX">
+                            <connections>
+                                <segue destination="v56-gY-Wiq" kind="modal" id="TiS-1s-MeZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="Bi3-L9-pkB" kind="relationship" relationship="nextPage" id="JgC-Cd-U27"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="cYa-R3-y66">
+            <objects>
+                <controller id="Bi3-L9-pkB">
+                    <items>
+                        <nowPlayingView alignment="left" id="fWc-wE-z9R"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="242" y="292"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="fcj-sh-YH7">
+            <objects>
+                <controller id="RGs-Ru-iJ0">
+                    <items>
+                        <nowPlayingView alignment="left" id="Jvh-f2-eRI"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="708" y="29"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="GfD-IZ-Jp4">
+            <objects>
+                <controller id="v56-gY-Wiq">
+                    <items>
+                        <nowPlayingView alignment="left" id="ykV-ib-4ID"/>
+                    </items>
+                    <connections>
+                        <segue destination="RGs-Ru-iJ0" kind="relationship" relationship="nextPage" id="gvF-2j-MxL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="474" y="29"/>
+        </scene>
+    </scenes>
+</document>
